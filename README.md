@@ -9,9 +9,9 @@ ElDewrito is a free modification for Halo Online, which was a Halo on PC video g
 by Saber Interactive and canceled by Microsoft in 2015. ElDewrito completely reimagines Halo 
 Online to bring you a fan-made Halo experience. 
 
-<a href="https://www.reddit.com/r/HaloOnline/comments/1ewqbzj/average_castle_wars_match/"><img src="Assets/clip-1.gif" alt="Clip 1" width="33%" height="33%"/></a>
-<a href="https://www.reddit.com/r/HaloOnline/comments/1hbmjup/teammates_done_dirty_credit_microwaveoven/"><img src="Assets/clip-2.gif" alt="Clip 2" width="33%" height="33%"/></a>
-<a href="https://www.reddit.com/r/HaloOnline/comments/1ccifwi/me_logging_in_expecting_anything_normal/"><img src="Assets/clip-3.gif" alt="Clip 3" width="33%" height="33%"/></a>
+<a href="https://www.reddit.com/r/HaloOnline/comments/1ewqbzj/average_castle_wars_match/"><img src="Assets/clip-1.gif" alt="Clip 1" width="30%" height="30%"/></a>
+<a href="https://www.reddit.com/r/HaloOnline/comments/1hbmjup/teammates_done_dirty_credit_microwaveoven/"><img src="Assets/clip-2.gif" alt="Clip 2" width="30%" height="30%"/></a>
+<a href="https://www.reddit.com/r/HaloOnline/comments/1ccifwi/me_logging_in_expecting_anything_normal/"><img src="Assets/clip-3.gif" alt="Clip 3" width="30%" height="30%"/></a>
 
 The original ElDewrito team disbanded in 2018 with the release of v0.6.1.0 after the team announced an indefinite pause to development.
 
