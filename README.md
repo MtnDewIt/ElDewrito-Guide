@@ -1,6 +1,7 @@
 # ElDewrito-Guide
 
 Last update: 10 January 2025
+
 Support on [Discord](http://eldewrito.org/discord) | [Reddit](http://eldewrito.org/reddit) | [Website](http://eldewrito.org/)
 
 ## What is ElDewrito?
@@ -200,7 +201,9 @@ You can support ElDewrito by hosting servers and [seeding](http://eldewrito.org/
 
 ## Appendix
 Current release version: 0.7.1
+
 Release date: 16 May 2024
+
 [Changelog](http://eldewrito.ch/changelog)
 
 ### Source Code and Downloads
