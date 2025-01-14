@@ -26,27 +26,27 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 2.	Run the Launcher (do not run as administrator).
 3.	Ignore Windows Smartscreen if prompted.
 
-![image](Assets/windows-3.png)
+<img src="Assets/windows-3.png" alt="Windows-3" width="50%" height="50%"/>
 
 4.	Click ‘Next’.
 
-![image](Assets/windows-4.png)
+<img src="Assets/windows-4.png" alt="Windows-4" width="50%" height="50%"/>
 
 5.	Wait for the Launcher to find the latest version.
 
-![image](Assets/windows-5.png)
+<img src="Assets/windows-5.png" alt="Windows-5" width="50%" height="50%"/>
 
 6.	Select your install location then click ‘Install’. We recommend your desktop folder.
 
-![image](Assets/windows-6.png)
+<img src="Assets/windows-6.png" alt="Windows-6" width="50%" height="50%"/>
 
 7.	Wait for the launcher to download and install ElDewrito.
 
-![image](Assets/windows-7.png)
+<img src="Assets/windows-7.png" alt="Windows-7" width="50%" height="50%"/>
 
 8.	Click ‘Play’ on the welcome screen after installation is complete.
 
-![image](Assets/windows-8.png)
+<img src="Assets/windows-8.png" alt="Windows-8" width="50%" height="50%"/>
 
 9.	Enjoy! Remember to seed to support the game’s distribution network. [Seeding Guide](http://eldewrito.org/seed).
 
@@ -123,7 +123,7 @@ Credit to @sahuntermech on Discord for the MacOS guide.
 
 3.	Go to Settings > Updates to force check for an update if it doesn't check itself.
 
-![image](Assets/issues-1.png)
+<img src="Assets/issues-1.png" alt="issues-1" width="50%" height="50%"/>
 
 If your launcher cannot find the [latest ElDewrito version](#appendix), torrenting is blocked on your 
 network. You can bypass torrent restrictions by using a VPN service. Direct Message 
@@ -167,7 +167,7 @@ Replace ‘C:\ElDewrito\’ in the command with the path to your ElDewrito folde
 
 Use the same command with the path to the launcher if it cannot access the Internet.
 
-![image](Assets/issues-2.png)
+<img src="Assets/issues-2.png" alt="issues-2" width="70%" height="70%"/>
 
 ## Community
 
