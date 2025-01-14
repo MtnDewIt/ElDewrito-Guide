@@ -4,6 +4,8 @@ Last update: 10 January 2025
 
 Support on [Discord](http://eldewrito.org/discord) | [Reddit](http://eldewrito.org/reddit) | [Website](http://eldewrito.org/)
 
+&nbsp;
+
 ## What is ElDewrito?
 ElDewrito is a free modification for Halo Online, which was a Halo on PC video game developed 
 by Saber Interactive and canceled by Microsoft in 2015. ElDewrito completely reimagines Halo 
@@ -18,6 +20,8 @@ The original ElDewrito team disbanded in 2018 with the release of v0.6.1.0 after
 ElDewrito 0.7 was released by a new team in 2024 with new content and significant improvements. A full changelog is available [here](http://eldewrito.org/changelog).
 
 ElDewrito has an active playerbase that primarily organises games through [HaloBase on Discord](https://discord.com/invite/PxPNNteChR).
+
+&nbsp;
 
 ## Installing ElDewrito
 
@@ -48,11 +52,15 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 
 <img src="Assets/windows-8.png" alt="Windows-8" width="70%" height="70%"/>
 
-9.	Enjoy! Remember to seed to support the game’s distribution network. [Seeding Guide](http://eldewrito.org/seed).
+9.	Enjoy! 
 
-    Join [HaloBase](https://discord.gg/PxPNNteChR) and get yourself the LFG role in #welcome to find other players.
+Remember to seed to support the game’s distribution network. [Seeding Guide](http://eldewrito.org/seed).
 
-    Modpacks are available at our [Modpacks Discord server](http://eldewrito.org/mods).
+Join [HaloBase](https://discord.gg/PxPNNteChR) and get yourself the LFG role in [#welcome](https://discord.com/channels/415700035398008843/449689096902672384) to find other players.
+
+Modpacks are available at our [Modpacks Discord server](http://eldewrito.org/mods).
+
+&nbsp;
 
 ### Steam Deck and Linux Distros
 You can also play ElDewrito on the Steam Deck and Linux distros through Steam Play.
@@ -86,6 +94,8 @@ Credit to @parmejuan. on Discord for the Steam/Proton guide.
 You can alternatively play ElDewrito using Lutris ([Instructions](https://discord.com/channels/84694847729963008/1232232873260482602/1235007335265599589) are available on the [ElDewrito Discord server](http://eldewrito.org/discord)). 
 
 Credit to @thelongwayhome on Discord for the Lutris guide.
+
+&nbsp;
 
 ### MacOS
 1.	[Install GPTK (Game Porting Tool Kit)](https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit).
@@ -125,6 +135,8 @@ NOTE: If you have a controller or gamepad, you will need to plug it in before la
 
 Credit to @sahuntermech on Discord for the MacOS guide.
 
+&nbsp;
+
 ## Issues and fixes
 
 ### Update issues
@@ -140,6 +152,8 @@ If your launcher cannot find the [latest ElDewrito version](#appendix), torrenti
 network. You can bypass torrent restrictions by using a VPN service. Direct Message 
 @duckfudge on Discord for additional support.
 
+&nbsp;
+
 ### Stuck on main menu and low framerates/poor performance
 Unzip the contents of this [DXVK implementation](https://github.com/duckfudge/eldewrito-dxvk/releases/latest) into your ElDewrito folder with 
 eldorado.exe.
@@ -151,6 +165,8 @@ map.
 Vulkan 1.3 support is required. ElDewrito will crash if your PC does not support DXVK — 
 delete the files if this is the case.
 
+&nbsp;
+
 ### Menus are not working
 Go to ```data\dewrito_prefs.cfg``` in your ElDewrito folder and change ```Game.CEFGpuEnable```
 to ```0``` or add this line if it does not exist:
@@ -159,10 +175,14 @@ to ```0``` or add this line if it does not exist:
 
 #### Simple fix: Place [this file](https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK) in your ElDewrito folder with eldorado.exe.
 
+&nbsp;
+
 ### Launcher fails to start and Torrentlib error
 Your PC is missing a dependency.
  - General failure: Install [this](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer).
  - Torrentlib error: Install [this](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+&nbsp;
 
 ### Network issues
 Your ISP may be blocking torrents. In this case, we suggest using a VPN like [Cloudflare WARP](https://1111-releases.cloudflareclient.com/win/latest) 
@@ -184,6 +204,8 @@ Use the same command with the path to the launcher if it cannot access the Inter
 
 <img src="Assets/issues-2.png" alt="issues-2" width="70%" height="70%"/>
 
+&nbsp;
+
 ## Community
 
 ### Content
@@ -191,6 +213,8 @@ You can find custom game modes, mod packs, and other community content at:
  - [ElDewrito Modpacks](http://eldewrito.ch/mods)
  - [Killnothing’s Repository](http://killnothing.gay/)
  - [ZGAF Fileshare](https://fileshare.zgaf.io/)
+
+&nbsp;
 
 ### Spaces
 The most-active Discord communities for ElDewrito are:
@@ -202,6 +226,8 @@ The most-active Discord communities for ElDewrito are:
 
 HaloBase/HB has a Looking-for-Group (LFG) role in its welcome channel that players ping for daily game sessions that often run for several hours.
 
+&nbsp;
+
 ## Support and thanks
 You can find support for ElDewrito on our [Discord Server](http://eldewrito.ch/discord), [Subreddit](http://eldewrito.org/reddit), and [Website](http://eldewrito.org/).
 
@@ -212,6 +238,8 @@ through tireless effort, lulls & sprints, and determination to create an experie
 Halo franchise’s fans.
 
 You can support ElDewrito by hosting servers and [seeding](http://eldewrito.org/seed).
+
+&nbsp;
 
 ## Appendix
 Current release version: 0.7.1
