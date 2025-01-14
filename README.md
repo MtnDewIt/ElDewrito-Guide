@@ -22,7 +22,7 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 ## Installing ElDewrito
 
 ### Windows
-1.	Download the [ElDewrito Launcher](http://eldewrito.org/download) [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
+1.	Download the [ElDewrito Launcher](http://eldewrito.org/download) | [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
 2.	Run the Launcher (do not run as administrator).
 3.	Ignore Windows Smartscreen if prompted.
 
@@ -36,7 +36,7 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 
 <img src="Assets/windows-5.png" alt="Windows-5" width="70%" height="70%"/>
 
-6.	Select your install location then click ‘Install’. We recommend your desktop folder.
+6.	Select your install location then click ```Install```. We recommend your desktop folder.
 
 <img src="Assets/windows-6.png" alt="Windows-6" width="70%" height="70%"/>
 
@@ -44,7 +44,7 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 
 <img src="Assets/windows-7.png" alt="Windows-7" width="70%" height="70%"/>
 
-8.	Click ‘Play’ on the welcome screen after installation is complete.
+8.	Click ```Play``` on the welcome screen after installation is complete.
 
 <img src="Assets/windows-8.png" alt="Windows-8" width="70%" height="70%"/>
 
@@ -57,17 +57,17 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 ### Steam Deck and Linux Distros
 You can also play ElDewrito on the Steam Deck and Linux distros through Steam Play.
 
-1.	Download the [ElDewrito Launcher](http://eldewrito.org/download) [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
+1.	Download the [ElDewrito Launcher](http://eldewrito.org/download) | [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
 
 2.	Open Steam settings.
 
 3.	Navigate to the Compatibility header.
 
-4.	Check ‘Enable Steam Play for all other titles’.
+4.	Check ```Enable Steam Play for all other titles```.
 
-5.	Select Proton 8.0-5 from the drop-down menu.
+5.	Select ```Proton 8.0-5``` from the drop-down menu.
 
-6.	Click ‘Ok’ then restart Steam.
+6.	Click ```Ok``` then restart Steam.
 
 7.	Add ElDewrito to your Steam library.
 
@@ -88,11 +88,11 @@ Credit to @thelongwayhome on Discord for the Lutris guide.
 ### MacOS
 1.	[Install GPTK (Game Porting Tool Kit)](https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit).
 
-2.	Download the [ElDewrito Launcher](http://eldewrito.org/download) [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
+2.	Download the [ElDewrito Launcher](http://eldewrito.org/download) | [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a).
 
 3.	[Download .NET 6.0.2 Installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer).
 
-4.	Extract all files to the GTPK directory (default name is 'my-game-prefix').
+4.	Extract all files to the GTPK directory (default name is ```my-game-prefix```).
 
     ```\Users~\my-game-prefix\Program_Files```
 
@@ -100,11 +100,12 @@ Credit to @thelongwayhome on Discord for the Lutris guide.
 
     ```gameportingtoolkit~/my-game-prefix 'C:\Program_Files\windowsdesktop-runtime-6.0.32-win-x64.exe'```
 
-6.	Run the ElDewrito Launcher — install to 'Program_Files' directory.
+6.	Run the ElDewrito Launcher — install to ```Program_Files``` directory.
 
     ```gameportingtoolkit ~/my-game-prefix 'C:\Program_files\launcher.exe```
 
-7.	Go into the ElDewrito folder, open "data/dewrito_prefs.cfg" and set Game.CEFGpuEnable to 0. Crete dewrito_prefs.cfg if it does not exist.
+7.	Go into the ElDewrito folder, open ```data/dewrito_prefs.cfg``` and set 
+    ```Game.CEFGpuEnable``` to ```0```. Create ```dewrito_prefs.cfg``` if it does not exist.
 
 8.	Run Halo Online with the 'no-esync' prefix.
 
@@ -141,8 +142,8 @@ Vulkan 1.3 support is required. ElDewrito will crash if your PC does not support
 delete the files if this is the case.
 
 ### Menus are not working
-Go to ‘data\dewrito_prefs.cfg’ in your ElDewrito folder and change Game.CEFGpuEnable 
-to 0 or add this line if it does not exist:
+Go to ```data\dewrito_prefs.cfg``` in your ElDewrito folder and change ```Game.CEFGpuEnable```
+to ```0``` or add this line if it does not exist:
 
 ```Game.CEFGpuEnable 0```
 
@@ -163,7 +164,7 @@ ElDewrito may also be blocked by your PC’s firewall. Run the following in Comm
 
 2.	```netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"```
 
-Replace ‘C:\ElDewrito\’ in the command with the path to your ElDewrito folder.
+Replace ```C:\ElDewrito\``` in the command with the path to your ElDewrito folder.
 
 Use the same command with the path to the launcher if it cannot access the Internet.
 
