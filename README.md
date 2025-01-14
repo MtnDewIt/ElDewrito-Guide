@@ -26,27 +26,27 @@ ElDewrito has an active playerbase that primarily organises games through [HaloB
 2.	Run the Launcher (do not run as administrator).
 3.	Ignore Windows Smartscreen if prompted.
 
-<img src="Assets/windows-3.png" alt="Windows-3" width="50%" height="50%"/>
+<img src="Assets/windows-3.png" alt="Windows-3" width="70%" height="70%"/>
 
 4.	Click ‘Next’.
 
-<img src="Assets/windows-4.png" alt="Windows-4" width="50%" height="50%"/>
+<img src="Assets/windows-4.png" alt="Windows-4" width="70%" height="70%"/>
 
 5.	Wait for the Launcher to find the latest version.
 
-<img src="Assets/windows-5.png" alt="Windows-5" width="50%" height="50%"/>
+<img src="Assets/windows-5.png" alt="Windows-5" width="70%" height="70%"/>
 
 6.	Select your install location then click ‘Install’. We recommend your desktop folder.
 
-<img src="Assets/windows-6.png" alt="Windows-6" width="50%" height="50%"/>
+<img src="Assets/windows-6.png" alt="Windows-6" width="70%" height="70%"/>
 
 7.	Wait for the launcher to download and install ElDewrito.
 
-<img src="Assets/windows-7.png" alt="Windows-7" width="50%" height="50%"/>
+<img src="Assets/windows-7.png" alt="Windows-7" width="70%" height="70%"/>
 
 8.	Click ‘Play’ on the welcome screen after installation is complete.
 
-<img src="Assets/windows-8.png" alt="Windows-8" width="50%" height="50%"/>
+<img src="Assets/windows-8.png" alt="Windows-8" width="70%" height="70%"/>
 
 9.	Enjoy! Remember to seed to support the game’s distribution network. [Seeding Guide](http://eldewrito.org/seed).
 
@@ -123,7 +123,7 @@ Credit to @sahuntermech on Discord for the MacOS guide.
 
 3.	Go to Settings > Updates to force check for an update if it doesn't check itself.
 
-<img src="Assets/issues-1.png" alt="issues-1" width="50%" height="50%"/>
+<img src="Assets/issues-1.png" alt="issues-1" width="70%" height="70%"/>
 
 If your launcher cannot find the [latest ElDewrito version](#appendix), torrenting is blocked on your 
 network. You can bypass torrent restrictions by using a VPN service. Direct Message 
