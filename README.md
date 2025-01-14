@@ -188,7 +188,7 @@ The most-active Discord communities for ElDewrito are:
 HaloBase/HB has a Looking-for-Group (LFG) role in its welcome channel that players ping for daily game sessions that often run for several hours.
 
 ## Support and thanks
-You can find support for ElDewrito on our [Discord](http://eldewrito.ch/discord) [Server](http://eldewrito.ch/discord), [Subreddit](http://eldewrito.org/reddit), and [Website](http://eldewrito.org/).
+You can find support for ElDewrito on our [Discord Server](http://eldewrito.ch/discord), [Subreddit](http://eldewrito.org/reddit), and [Website](http://eldewrito.org/).
 
 ElDewrito 0.7 was developed as a community effort over six years with contributions from 
 40+ members from all over the world. We give our most sincere gratitude to those 
