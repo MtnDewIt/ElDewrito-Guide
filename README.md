@@ -73,7 +73,9 @@ You can also play ElDewrito on the Steam Deck and Linux distros through Steam Pl
 
 8.	Add the following as a launch option/argument for the ElDewrito Launcher’s properties in Steam:
 
-    ```DOTNET_BUNDLE_EXTRACT_BASE_DIR=.cache %command%```
+    ```
+    DOTNET_BUNDLE_EXTRACT_BASE_DIR=.cache %command%
+    ```
 
 9.	Run the ElDewrito Launcher through Steam then install .NET 6.0 Desktop Runtime (v6.0.36) to the ElDewrito Launcher’s directory when prompted.
 
@@ -94,22 +96,30 @@ Credit to @thelongwayhome on Discord for the Lutris guide.
 
 4.	Extract all files to the GTPK directory (default name is ```my-game-prefix```).
 
-    ```\Users~\my-game-prefix\Program_Files```
+    ```
+    \Users~\my-game-prefix\Program_Files
+    ```
 
 5.	Run the .NET installer through the GPTK terminal.
 
-    ```gameportingtoolkit~/my-game-prefix 'C:\Program_Files\windowsdesktop-runtime-6.0.32-win-x64.exe'```
+    ```
+    gameportingtoolkit~/my-game-prefix 'C:\Program_Files\windowsdesktop-runtime-6.0.32-win-x64.exe'
+    ```
 
 6.	Run the ElDewrito Launcher — install to ```Program_Files``` directory.
 
-    ```gameportingtoolkit ~/my-game-prefix 'C:\Program_files\launcher.exe```
+    ```
+    gameportingtoolkit ~/my-game-prefix 'C:\Program_files\launcher.exe
+    ```
 
 7.	Go into the ElDewrito folder, open ```data/dewrito_prefs.cfg``` and set 
     ```Game.CEFGpuEnable``` to ```0```. Create ```dewrito_prefs.cfg``` if it does not exist.
 
-8.	Run Halo Online with the 'no-esync' prefix.
+8.	Run Halo Online with the ```no-esync``` prefix.
 
-    ```gameportingtoolkit-no-esync ~/my-game-prefix 'C:\Program Files\ElDewrito\eldorado.exe'```
+    ```
+    gameportingtoolkit-no-esync ~/my-game-prefix 'C:\Program Files\ElDewrito\eldorado.exe'
+    ```
 
 NOTE: If you have a controller or gamepad, you will need to plug it in before launching ElDewrito.
 
@@ -160,9 +170,13 @@ or tethering your mobile data connection to your PC.
 
 ElDewrito may also be blocked by your PC’s firewall. Run the following in Command Prompt or Powershell as Administrator:
 
-1.	```netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"```
+```
+netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"
+```
 
-2.	```netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"```
+```
+netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"
+```
 
 Replace ```C:\ElDewrito\``` in the command with the path to your ElDewrito folder.
 
