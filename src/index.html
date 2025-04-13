@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ElDewrito Guide</title>
+    <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">ElDewrito Guide</div>
+        <ul class="tabs">
+            <li data-page="about" class="selected"><a href="#about">About</a></li>
+            <li data-page="installation"><a href="#installation">Installation</a></li>
+            <li data-page="issues"><a href="#issues">Troubleshooting</a></li>
+            <li data-page="seeding"><a href="#seeding">Seeding</a></li>
+            <!--<li data-page="hosting"><a href="#hosting">Hosting</a></li>-->
+            <li data-page="community"><a href="#community">Community</a></li>
+            <li data-page="support"><a href="#support">Support</a></li>
+            <li data-page="appendix"><a href="#appendix">Appendix</a></li>
+        </ul>
+
+        <div class="content">
+            <div id="about" class="page active">
+                <div class="section">
+                    <h2>What is ElDewrito?</h2>
+                    <p>ElDewrito is a free modification for Halo Online, which was a Halo on PC video game developed by Saber Interactive and canceled by Microsoft in 2015. ElDewrito completely reimagines Halo Online to bring you a fan-made Halo experience.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-item">
+                            <video loop muted autoplay playsinline>
+                                <source src="assets/videos/castlewars.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-item">
+                            <video loop muted autoplay playsinline>
+                                <source src="assets/videos/fatkid.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-item">
+                            <video loop muted autoplay playsinline>
+                                <source src="assets/videos/duckhunt.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-item">
+                            <video loop muted autoplay playsinline>
+                                <source src="assets/videos/ramp.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <p>The original ElDewrito team disbanded in 2018 with the release of v0.6.1.0 after the team announced an indefinite pause to development.</p>
+
+                    <!-- TODO: 
+                    [here](http://eldewrito.org/changelog)
+                    [HaloBase on Discord](https://discord.com/invite/PxPNNteChR)
+                    -->
+
+                    <p>ElDewrito 0.7 was released by a new team in 2024 with new content and significant improvements. A full changelog is available here.</p>
+
+                    <p>ElDewrito has an active playerbase that primarily organises games through HaloBase on Discord.</p>
+                </div>
+            </div>
+
+            <div id="installation" class="page">
+                <div class="section">
+                    <h2>Installing ElDewrito</h2>
+
+                    <!-- TODO: Fine tune spacing and padding of tab icons -->
+
+                    <div class="platform-tabs">
+                        <div class="platform-tab active" onclick="showPlatform('windows')">
+                            <img src="assets/install/windows/windows-icon.svg" alt="Windows" />
+                            <span>Windows</span>
+                        </div>
+                        <div class="platform-tab" onclick="showPlatform('mac')">
+                            <img src="assets/install/macos/macos-icon.svg" alt="Mac OS" />
+                            <span>Mac OS</span>
+                        </div>
+                        <div class="platform-tab" onclick="showPlatform('linux')">
+                            <img src="assets/install/linux/linux-icon.svg" alt="Linux" />
+                            <span>Linux</span>
+                        </div>
+                        <div class="platform-tab" onclick="showPlatform('steam-deck')">
+                            <img src="assets/install/steamdeck/steamdeck-icon.svg" alt="Steam Deck" />
+                            <span>Steam Deck</span>
+                        </div>
+                    </div>
+
+                    <div id="windows-content" class="platform-content active">
+                        <h3>Windows Installation</h3>
+
+                        <!-- TODO: Add inline code comments-->
+
+                        <ol>
+                            <!-- TODO:
+                            [ElDewrito Launcher](http://eldewrito.org/download)
+                            [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                            -->
+                            <li>Download the ElDewrito Launcher | Virustotal</li>
+                            <li>Run the Launcher (do not run as administrator).</li>
+                            <li>Ignore Windows Smartscreen if prompted.</li>
+                            <img src="assets/install/windows/windows-3.png" alt="Windows-3" width="35%" height="35%"/>
+                            <li>Click Next.</li>
+                            <img src="assets/install/windows/windows-4.png" alt="Windows-4" width="35%" height="35%"/>
+                            <li>Wait for the Launcher to find the latest version.</li>
+                            <img src="assets/install/windows/windows-5.png" alt="Windows-5" width="35%" height="35%"/>
+                            <li>Select your install location then click Install. We recommend your desktop folder.</li>
+                            <img src="assets/install/windows/windows-6.png" alt="Windows-6" width="35%" height="35%"/>
+                            <li>Wait for the launcher to download and install ElDewrito.</li>
+                            <img src="assets/install/windows/windows-7.png" alt="Windows-7" width="35%" height="35%"/>
+                            <li>Click Play on the welcome screen after installation is complete.</li>
+                            <img src="assets/install/windows/windows-8.png" alt="Windows-8" width="35%" height="35%"/>
+                            <li>Enjoy!</li>
+                        </ol>
+
+                        <!-- TODO:
+                        [Seeding Guide](http://eldewrito.org/seed)
+                        -->
+                        <p>Remember to seed to support the game’s distribution network. Seeding Guide.</p>
+                        <!-- TODO:
+                        [HaloBase](https://discord.gg/PxPNNteChR)
+                        [#welcome](https://discord.com/channels/415700035398008843/449689096902672384)
+                        -->
+                        <p>Join HaloBase and get yourself the LFG role in #welcome to find other players.</p>
+                        <!-- TODO:
+                        [Modpacks Discord server](http://eldewrito.org/mods)
+                        -->
+                        <p>Modpacks are available at our Modpacks Discord server.</p>
+                    </div>
+
+                    <div id="mac-content" class="platform-content">
+                        <h3>Mac OS Installation</h3>
+
+                        <!-- TODO: Add inline code comments-->
+
+                        <ol>
+                            <!-- TODO:
+                            [Install GPTK (Game Porting Tool Kit)](https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit)
+                            -->
+                            <li>Install GPTK (Game Porting Tool Kit)</li>
+                            <!-- TODO:
+                            [ElDewrito Launcher](http://eldewrito.org/download)
+                            [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                            -->
+                            <li>Download the ElDewrito Launcher | Virustotal</li>
+                            <!-- TODO:
+                            [Download .NET 6.0.2 Installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer)
+                            -->
+                            <li>Download .NET 6.0.2 Installer</li>
+                            <li>Extract all files to the GTPK directory (default name is my-game-prefix)
+                                <code>\Users~\my-game-prefix\Program_Files</code>
+                            </li>
+                            <li>Run the .NET installer through the GPTK terminal.
+                                <code>gameportingtoolkit~/my-game-prefix 'C:\Program_Files\windowsdesktop-runtime-6.0.32-win-x64.exe'</code>
+                            </li>
+                            <li>Run the ElDewrito Launcher — install to Program_Files directory
+                                <code>gameportingtoolkit ~/my-game-prefix 'C:\Program_files\launcher.exe</code>
+                            </li>
+                            <li>Go into the ElDewrito folder, open data/dewrito_prefs.cfg and set Game.CEFGpuEnable to 0. Create dewrito_prefs.cfg if it does not exist</li>
+                            <li>Run Halo Online with the no-esync prefix
+                                <code>gameportingtoolkit-no-esync ~/my-game-prefix 'C:\Program Files\ElDewrito\eldorado.exe'</code>
+                            </li>
+                        </ol>
+
+                        <div class="note">
+                            <p><strong>Note:</strong> If you have a controller or gamepad, you will need to plug it in before launching ElDewrito.</p>
+                        </div>
+
+                        <p>Credit to @sahuntermech on Discord for the Mac OS guide.</p>
+                    </div>
+
+                    <div id="linux-content" class="platform-content">
+                        <h3>Linux Installation</h3>
+
+                        <!-- TODO: Add inline code comments-->
+
+                        <ol>
+                            <!-- TODO:
+                            [ElDewrito Launcher](http://eldewrito.org/download)
+                            [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                            -->
+                            <li>Download the ElDewrito Launcher | Virustotal</li>
+                            <!-- TODO:
+                            [Lutris](https://lutris.net/downloads)
+                            -->
+                            <li>Install and Open Lutris.</li>
+                            <li>Click the Plus Sign in the Top Left.</li>
+                            <li>Select Install a Windows game from an executable.</li>
+                            <li>Enter a name for the install (ElDewrito or Halo Online would both be optimal).</li>
+                            <li>Select Install.</li>
+                            <li>Click Setup File then Install.</li>
+                            <li>Select the folder where you wish to install ElDewrito.</li>
+                            <li>Find the location where you saved your launcher.exe and Select it, then click Install.</li>
+                            <li>Lutris will now start the installation process</li>
+                            <li>Install as usual, just keep the default location because it's all going to be installed to the location that you selected earlier</li>
+                            <li>Start and Close the Game</li>
+                            <li>Close the Launcher and go back into Lutris</li>
+                            <li>Right Click Configure, then Game Options</li>
+                            <li>For the Executable option, Select the launcher.exe that Lutris installed. It should be in the path:
+                                <code>(installation folder)\drive_c\users\(user_name)\Desktop\ElDewrito\launcher.exe</code>
+                            </li>
+                            <li>Click Save and close back to Lutris</li>
+                            <li>To add the game to steam, Right Click Create steam shortcut. Once you go back to Game Mode or restart Steam, the game should be there.</li>
+                            <li>Run ElDewrito through Steam and enjoy!</li>
+                        </ol>
+
+                        <p>Credit to @thelongwayhome on Discord for the Lutris guide.</p>
+                    </div>
+
+                    <div id="steam-deck-content" class="platform-content">
+                        <h3>Steam Deck Installation</h3>
+
+                        <!-- TODO: Add inline code comments-->
+
+                        <ol>
+                            <!-- TODO:
+                            [ElDewrito Launcher](http://eldewrito.org/download)
+                            [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                            -->
+                            <li>Download the ElDewrito Launcher | Virustotal</li>
+                            <li>Open Steam settings.</li>
+                            <li>Navigate to the Compatibility header.</li>
+                            <li>Check Enable Steam Play for all other titles.</li>
+                            <li>Select Proton 8.0-5 from the drop-down menu.</li>
+                            <li>Click Ok then restart Steam.</li>
+                            <li>Add ElDewrito to your Steam library.</li>
+                            <li>Add the following as a launch option/argument for the ElDewrito Launcher’s properties in Steam:
+                                <code>DOTNET_BUNDLE_EXTRACT_BASE_DIR=.cache %command%</code>
+                            </li>
+                            <li>Run the ElDewrito Launcher through Steam then install .NET 6.0 Desktop Runtime (v6.0.36) to the ElDewrito Launcher’s directory when prompted.</li>
+                            <li>Run ElDewrito through Steam and enjoy!</li>
+                        </ol>
+
+                        <p>Credit to @parmejuan. on Discord for the Steam/Proton guide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="issues" class="page">
+                <div class="section">
+                    <h2>Common Issues & Troubleshooting</h2>
+
+                    <!-- TODO: Reword some of these so that there is a little more information explaining the exact issue :/ -->
+
+                    <h3>Update Issues</h3>
+                    <ol>
+                        <li>Place the latest ElDewrito launcher (16 May 2024) in your ElDewrito folder.</li>
+                        <li>Run the launcher.</li>
+                        <li>Go to Settings > Updates to force check for an update if it doesn't check itself.</li>
+                        <img src="assets/issues/issues-1.png" alt="Issues-1" width="35%" height="35%"/>
+                    </ol>
+                    <p>If your launcher cannot find the latest ElDewrito version, torrenting is blocked on your network. You can bypass torrent restrictions by using a VPN service. Direct Message @duckfudge on Discord for additional support.</p>
+
+                    <h3>Stuck On Main Menu And Low Framerates/Poor Performance</h3>
+                    <p>Unzip the contents of this DXVK implementation into your ElDewrito folder with eldorado.exe.</p>
+                    <p>Your game will stutter on the first run of any map and first load times will increase. You will have butter-smooth performance after restarting the game and loading the same map.</p>
+
+                    <div class="warning">
+                        <p><strong>WARNING:</strong> Vulkan 1.3 support is required. ElDewrito will crash if your PC does not support DXVK — delete the files if this is the case.</p>
+                    </div>
+
+                    <h3>Menus Are Not Working</h3>
+
+                    <!-- TODO: Add inline code blocks -->
+                    <p>Go to data\dewrito_prefs.cfg in your ElDewrito folder and change Game.CEFGpuEnable to 0 or add this line if it does not exist:</p>
+                    <code>Game.CEFGpuEnable 0</code>
+
+                    <!-- TODO: [this file](https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK) -->
+                    <p>Simple fix: Place this file in your ElDewrito folder with eldorado.exe.</p>
+
+                    <h3>Extreme Brightness</h3>
+                    <p>Enable CPU Exposure/Bloom Patch in Video Settings (Press HOME).</p>
+                    <img src="assets/issues/issues-4.png" alt="Issues-4" width="35%" height="35%"/>
+
+                    <h3>Launcher Fails To Start And TorrentLib Error</h3>
+                    <p>Your PC is missing a dependency.</p>
+                    <ul>
+                        <!-- TODO: Add URLs:
+                        [this](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer)
+                        [this](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+                        -->
+                        <li>General failure: Install this.</li>
+                        <li>Torrentlib error: Install this.</li>
+                    </ul>
+
+                    <h3>Network Issues</h3>
+                    <!--TODO: [Cloudflare WARP](https://1111-releases.cloudflareclient.com/win/latest)-->
+                    <p>Your ISP may be blocking torrents. In this case, we suggest using a VPN like Cloudflare WARP or tethering your mobile data connection to your PC.</p>
+                    <p></p>
+
+                    <code>netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"</code>
+                    <code>netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"</code>
+
+                    <!-- TODO: Add inline code blocks -->
+                    <p>Replace C:\ElDewrito\ in the command with the path to your ElDewrito folder.</p>
+                    <p>Use the same command with the path to the launcher if it cannot access the Internet.</p>
+                    <img src="assets/issues/issues-2.png" alt="Issues-2" width="35%" height="35%"/>
+
+                    <!-- If none of these solutions work, or you encounter an issue not listed here, blah blah, slap it on discord :/ -->
+
+                    <div class="note">
+                        <p><strong>IMPORTANT:</strong> If none of these solutions work, or you encounter an issue not listed here, ....</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="seeding" class="page">
+                <div class="section">
+                    <h2>Seeding</h2>
+
+                    <!-- TODO: Add a brief description of what seeding is and how it relates to ED -->
+
+                    <!-- TODO: Add inline code blocks -->
+
+                    <h3>Launcher</h3>
+                    <ol>
+                        <li>Download the ElDewrito Launcher (Virustotal) and install the game.</li>
+                        <li>Go to Settings, then General then allow the launcher to start with Windows.</li>
+                        <img src="assets/seeding/seeding-2.png" alt="Seeding-2" width="35%" height="35%"/>
+                        <li>Go to Settings, then Updates then set an update check interval and enable automatic updates.</li>
+                        <img src="assets/seeding/seeding-3.png" alt="Seeding-3" width="35%" height="35%"/>
+                        <li>Go to Settings, then Seeding then click on the gear (⚙️) icon.</li>
+                        <img src="assets/seeding/seeding-4.png" alt="Seeding-4" width="35%" height="35%"/>
+                        <li>Enable automatic seeding.</li>
+                        <img src="assets/seeding/seeding-5.png" alt="Seeding-5" width="35%" height="35%"/>
+                        <li>Go back to Settings > Seeding then click ‘Start’.</li>
+                        <img src="assets/seeding/seeding-6.png" alt="Seeding-6" width="35%" height="35%"/>
+                    </ol>
+                    <h3>Torrent Clients and Seedboxes</h3>
+                    <ol>
+                        <li>Go to Settings, then Seeding then click ‘Torrent File’.</li>
+                        <img src="assets/seeding/seeding-7.png" alt="Seeding-7" width="35%" height="35%"/>
+                        <li>The launcher will open a folder with a torrent file for the current version. Upload this file to your torrent client or seedbox. Alternatively, paste the magnet link.</li>
+                        <img src="assets/seeding/seeding-8.png" alt="Seeding-8" width="35%" height="35%"/>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="hosting" class="page">
+                <div class="section">
+                    <h2>Server Hosting</h2>
+
+                    <!-- TODO: Maybe pull documentation from the repo 
+                    https://gitlab.com/Insan1ty0ne/eldewrito-server-hosting
+                    -->
+                </div>
+            </div>
+
+            <div id="community" class="page">
+                <div class="section">
+                    <h2>Community Information</h2>
+
+                    <!-- TODO: Maybe update this with a little more relevant info :/ -->
+
+                    <h3>Content</h3>
+                    <p>You can find custom game modes, mod packs, and other community content at:</p>
+                    <ul>
+                        <!-- TODO: 
+                        [ElDewrito Modpacks](http://eldewrito.ch/mods)
+                        [Killnothing’s Repository](http://killnothing.gay/)
+                        [ZGAF Fileshare](https://fileshare.zgaf.io/)
+                        -->
+                        <li>ElDewrito Modpacks</li>
+                        <li>Killnothing’s Repository</li>
+                        <li>ZGAF Fileshare</li>
+                    </ul>
+
+                    <h3>Spaces</h3>
+                    <p>The most-active Discord communities for ElDewrito are:</p>
+                    <ul>
+                        <!-- TODO: 
+                        [HaloBase](https://discord.gg/PxPNNteChR)
+                        [ElDewrito Main](https://discord.gg/0TKY0SDEUHAWL4sG)
+                        [ElDewrito Modpacks](http://eldewrito.ch/mods)
+                        [Halo Bois (Killnothing’s Server)](https://discord.gg/5s3m4Heey8)
+                        [Capybara Containment Cell](https://discord.gg/Pnb9aSq9XN)
+                        -->
+                        <li>HaloBase</li>
+                        <li>ElDewrito Main</li>
+                        <li>ElDewrito Modpacks</li>
+                        <li>Halo Bois (Killnothing’s Server)</li>
+                        <li>Capybara Containment Cell</li>
+                    </ul>
+
+                    <p>HaloBase/HB has a Looking-for-Group (LFG) role in its welcome channel that players ping for daily game sessions that often run for several hours.</p>
+                </div>
+            </div>
+
+            <div id="support" class="page">
+                <div class="section">
+                    <h2>Support & Resources</h2>
+
+                    <!-- TODO: Redo this so the links are layed out a little better instead of just URLs :/ 
+                    [Discord Server](http://eldewrito.ch/discord)
+                    [Subreddit](http://eldewrito.org/reddit)
+                    [Website](http://eldewrito.org/)
+                    -->
+
+                    <p>You can find support for ElDewrito on our Discord Server, Subreddit, and Website.</p>
+
+                    <p>ElDewrito 0.7 was developed as a community effort over six years with contributions from 40+ members from all over the world. We give our most sincere gratitude to those members for their contributions, guidance, and support. ElDewrito 0.7 was possible through tireless effort, lulls & sprints, and determination to create an experience fit for the Halo franchise’s fans.</p>
+
+                    <!-- TODO: A a proper link for the seeding guide, or add it to this page in some form
+                    [seeding](http://eldewrito.org/seed)
+                    -->
+
+                    <p>You can support ElDewrito by hosting servers and seeding.</p>
+                </div>
+            </div>
+
+            <div id="appendix" class="page">
+                <div class="section">
+                    <h2>Appendix</h2>
+
+                    <!-- TODO: Redo this section completely :/ -->
+
+                    <p>Current release version: 0.7.1</p>
+
+                    <p>Release date: 16 May 2024</p>
+
+                    <!--TODO: 
+                    [Changelog](http://eldewrito.ch/changelog)
+                    -->
+                    <p>Changelog</p>
+                </div>
+            </div>
+            <!--
+            <div class="bottom-links">
+            </div>
+            -->
+        </div>
+
+        <div class="bottom-nav">
+            <button id="prev-button" class="nav-button" onclick="navigatePage('prev')" disabled>Previous</button>
+            <button id="next-button" class="nav-button" onclick="navigatePage('next')">Next</button>
+        </div>
+    <div>
+
+    <script type="text/javascript" src="guide.js"></script>
+</body>
+</html>

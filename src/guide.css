@@ -1,0 +1,393 @@
+@font-face 
+{
+    font-family: "Conduit ITC";
+    src: url(assets/fonts/Conduit-ITC.woff);
+}
+
+html 
+{
+    color: #98b3d3;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0.5);
+}
+
+* 
+{
+    font-family: "Conduit ITC", sans-serif;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+*:focus 
+{
+    outline: none;
+}
+
+body 
+{
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main
+{
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    /*background-color: -webkit-linear-gradient(-90deg, rgba(27,41,70,0.94902) 0%, rgba(24,39,69,0.9) 20%, rgba(24,39,69,0.90196) 20%, rgba(6,16,37,0.85098) 100%);*/
+    background-image: url(assets/background.jpg);
+    animation: fadeIn 0.5s;
+}
+
+.header 
+{
+    height: 6.48vh;
+    font-size: 5vh;
+    line-height: 6.48vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding-left: 5%;
+    margin: 0;
+    text-align: left;
+    font-weight: 100;
+    text-transform: uppercase;
+    z-index: 10;
+    background-color: rgba(2, 8, 13, 0.85);
+    border-top: solid 0.15vh rgba(91, 106, 133, 0.3);
+    border-bottom: solid 0.15vh rgba(91, 106, 133, 0.3);
+    box-sizing: border-box;
+}
+
+.tabs 
+{
+    position: fixed;
+    top: 6.48vh;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    height: 5vh;
+    z-index: 5;
+    padding: 0 5%;
+    margin: 0;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(0deg, rgba(27,41,70,0) 0%, rgba(27,41,70,1) 0%, rgba(27,41,70,1) 100%, rgba(27,41,70,0) 100%);
+}
+
+.tabs:after 
+{
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 0.15vh;
+    background-image: -webkit-linear-gradient(0deg, rgba(131,158,190,0) 0%, rgba(131,158,190,0.2) 10%, rgba(131,158,190,0.2) 90%, rgba(131,158,190,0) 100%);
+}
+
+.tabs li 
+{
+    display: flex;
+    margin-right: 0;
+}
+
+.tabs li.selected a 
+{
+    color: white;
+    font-weight: 300;
+}
+
+.tabs li a 
+{
+    display: block;
+    color: grey;
+    text-decoration: none;
+    float: left;
+    margin: 0;
+    padding: 0.5vh;
+    margin-right: 0.5vh;
+    font-size: 2.5vh;
+}
+
+.tabs li a:hover 
+{
+    color: #b6b6b6;
+}
+
+.tabs img 
+{
+    display: none;
+    position: relative;
+    width: 3.75vh;
+    height: 3.75vh;
+    margin: 0;
+    top: 0.3vh;
+}
+
+.content 
+{
+    margin-top: 11.5vh;
+    padding: 2vh 5% 10vh 5%;
+    box-sizing: border-box;
+}
+
+.section 
+{
+    margin-bottom: 4vh;
+    background: -webkit-linear-gradient(-90deg, rgba(24,44,75,0.94902) 0%, rgba(24,44,75,0.9) 20%, rgba(24,44,75,0.90196) 20%, rgba(24,44,75,0.85098) 100%);
+    padding: 2vh;
+    border-radius: 0.5vh;
+}
+
+h2 
+{
+    color: white;
+    font-size: 3vh;
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+h3 
+{
+    color: #b6b6b6;
+    font-size: 2.5vh;
+    font-weight: 300;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+p, ul, ol 
+{
+    font-size: 2vh;
+    line-height: 2.8vh;
+}
+
+ul, ol 
+{
+    padding-left: 3vh;
+}
+
+li 
+{
+    margin-bottom: 1vh;
+}
+
+code 
+{
+    display: block;
+    background: rgba(44, 65, 106, 0.949);
+    padding: 1vh;
+    margin: 1vh 0;
+    border-radius: 0.3vh;
+    color: #d9e0e9;
+}
+
+.note 
+{
+    background: rgba(44, 65, 106, 0.949);
+    padding: 1vh;
+    margin: 1vh 0;
+    border-left: 0.5vh solid #98b3d3;
+    border-radius: 0.25vh;
+}
+
+.warning
+{
+    background: rgba(106, 44, 44, 0.949);
+    padding: 1vh;
+    margin: 1vh 0;
+    border-left: 0.5vh solid #d39898;
+    border-radius: 0.25vh;
+}
+
+.warning p
+{
+    color: #d39898;
+    margin: 0vh;
+}
+
+.platform-tabs {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.platform-tab {
+    background: rgba(44, 65, 106, 0.949);
+    padding: 1vh 2vh;
+    margin-right: 1vh;
+    cursor: pointer;
+    border-radius: 0.25vh;
+    display: flex;
+    align-items: center;
+}
+
+.platform-tab img {
+    margin-right: 0.8vh;
+    width: 2vh;
+    height: 2vh;
+}
+
+.platform-tab span {
+    display: inline-block;
+}
+
+.platform-tab:hover {
+    background-image: url(assets/buttonhover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.platform-tab.active {
+    color: white;
+    outline: solid 0.2vh;
+}
+
+.platform-content 
+{
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.platform-content.active 
+{
+    display: block;
+}
+
+.bottom-links 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.bottom-links a 
+{
+    color: #98b3d3;
+    text-decoration: none;
+}
+
+.bottom-links a:hover 
+{
+    text-decoration: underline;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2vh 0;
+}
+
+th, td 
+{
+    padding: 1vh;
+    text-align: left;
+    border-bottom: 0.1vh solid rgba(91, 106, 133, 0.3);
+}
+
+th 
+{
+    background: rgba(44, 65, 106, 0.949);
+    color: white;
+}
+
+.bottom-nav 
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(2, 8, 13, 0.85);
+    border-top: solid 0.15vh rgba(91, 106, 133, 0.3);
+    border-bottom: solid 0.15vh rgba(91, 106, 133, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 5%;
+    box-sizing: border-box;
+}
+
+.nav-button 
+{
+    background: rgba(44, 65, 106, 0.949);
+    border: none;
+    color: #98b3d3;
+    padding: 1vh 2vh;
+    cursor: pointer;
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+.nav-button:hover 
+{
+    background-image: url(assets/buttonhover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.nav-button:disabled 
+{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.page 
+{
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.page.active 
+{
+    display: block;
+}
+
+/*TODO: Screw around with animation styles*/
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    margin: 2vh 0;
+}
+
+.video-item {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: rgba(44, 65, 106, 0.949);
+    border-radius: 0.3vh;
+    overflow: hidden;
+}
+
+.video-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
