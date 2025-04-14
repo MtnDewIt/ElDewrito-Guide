@@ -62,7 +62,47 @@ function showPlatform(platform)
     
     document.getElementById(platform + '-content').classList.add('active');
     
-    event.target.classList.add('active');
+    const clickedElement = event.target;
+    const tabElement = clickedElement.closest('.platform-tab');
+    tabElement.classList.add('active');
+}
+
+function showIssues(type) 
+{
+    document.querySelectorAll('.issue-content').forEach(content => 
+    {
+        content.classList.remove('active');
+    });
+    
+    document.querySelectorAll('.issue-tab').forEach(tab => 
+    {
+        tab.classList.remove('active');
+    });
+    
+    document.getElementById(type + '-content').classList.add('active');
+    
+    const clickedElement = event.target;
+    const tabElement = clickedElement.closest('.issue-tab');
+    tabElement.classList.add('active');
+}
+
+function showSeeding(type) 
+{
+    document.querySelectorAll('.seeding-content').forEach(content => 
+    {
+        content.classList.remove('active');
+    });
+    
+    document.querySelectorAll('.seeding-tab').forEach(tab => 
+    {
+        tab.classList.remove('active');
+    });
+    
+    document.getElementById(type + '-content').classList.add('active');
+    
+    const clickedElement = event.target;
+    const tabElement = clickedElement.closest('.seeding-tab');
+    tabElement.classList.add('active');
 }
 
 document.querySelectorAll('.tabs li').forEach(tab => 

@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="guide.css">
 </head>
 <body>
+    <!--TODO: Add toggle for background video: accesibility reasons :/-->
+    <video loop muted autoplay playsinline id="background-video">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+    </video>
+
     <div class="main">
         <div class="header">ElDewrito Guide</div>
         <ul class="tabs">
@@ -241,64 +246,103 @@
 
                     <!-- TODO: Reword some of these so that there is a little more information explaining the exact issue :/ -->
 
-                    <h3>Update Issues</h3>
-                    <ol>
-                        <li>Place the latest ElDewrito launcher (16 May 2024) in your ElDewrito folder.</li>
-                        <li>Run the launcher.</li>
-                        <li>Go to Settings > Updates to force check for an update if it doesn't check itself.</li>
-                        <img src="assets/issues/issues-1.png" alt="Issues-1" width="35%" height="35%"/>
-                    </ol>
-                    <p>If your launcher cannot find the latest ElDewrito version, torrenting is blocked on your network. You can bypass torrent restrictions by using a VPN service. Direct Message @duckfudge on Discord for additional support.</p>
-
-                    <h3>Stuck On Main Menu And Low Framerates/Poor Performance</h3>
-                    <p>Unzip the contents of this DXVK implementation into your ElDewrito folder with eldorado.exe.</p>
-                    <p>Your game will stutter on the first run of any map and first load times will increase. You will have butter-smooth performance after restarting the game and loading the same map.</p>
-
-                    <div class="warning">
-                        <p><strong>WARNING:</strong> Vulkan 1.3 support is required. ElDewrito will crash if your PC does not support DXVK — delete the files if this is the case.</p>
-                    </div>
-
-                    <h3>Menus Are Not Working</h3>
-
-                    <!-- TODO: Add inline code blocks -->
-                    <p>Go to data\dewrito_prefs.cfg in your ElDewrito folder and change Game.CEFGpuEnable to 0 or add this line if it does not exist:</p>
-                    <code>Game.CEFGpuEnable 0</code>
-
-                    <!-- TODO: [this file](https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK) -->
-                    <p>Simple fix: Place this file in your ElDewrito folder with eldorado.exe.</p>
-
-                    <h3>Extreme Brightness</h3>
-                    <p>Enable CPU Exposure/Bloom Patch in Video Settings (Press HOME).</p>
-                    <img src="assets/issues/issues-4.png" alt="Issues-4" width="35%" height="35%"/>
-
-                    <h3>Launcher Fails To Start And TorrentLib Error</h3>
-                    <p>Your PC is missing a dependency.</p>
-                    <ul>
-                        <!-- TODO: Add URLs:
-                        [this](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer)
-                        [this](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-                        -->
-                        <li>General failure: Install this.</li>
-                        <li>Torrentlib error: Install this.</li>
-                    </ul>
-
-                    <h3>Network Issues</h3>
-                    <!--TODO: [Cloudflare WARP](https://1111-releases.cloudflareclient.com/win/latest)-->
-                    <p>Your ISP may be blocking torrents. In this case, we suggest using a VPN like Cloudflare WARP or tethering your mobile data connection to your PC.</p>
-                    <p></p>
-
-                    <code>netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"</code>
-                    <code>netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"</code>
-
-                    <!-- TODO: Add inline code blocks -->
-                    <p>Replace C:\ElDewrito\ in the command with the path to your ElDewrito folder.</p>
-                    <p>Use the same command with the path to the launcher if it cannot access the Internet.</p>
-                    <img src="assets/issues/issues-2.png" alt="Issues-2" width="35%" height="35%"/>
-
                     <!-- If none of these solutions work, or you encounter an issue not listed here, blah blah, slap it on discord :/ -->
 
                     <div class="note">
                         <p><strong>IMPORTANT:</strong> If none of these solutions work, or you encounter an issue not listed here, ....</p>
+                    </div>
+
+                    <div class="issue-tabs">
+                        <div class="issue-tab active" onclick="showIssues('update')">
+                            <img src="assets/issues/update.svg" alt="Update" />
+                            <span>Update Issues</span>
+                        </div>
+                        <div class="issue-tab" onclick="showIssues('performance')">
+                            <img src="assets/issues/performance.svg" alt="Performance" />
+                            <span>Performance Issues</span>
+                        </div>
+                        <div class="issue-tab" onclick="showIssues('graphical')">
+                            <img src="assets/issues/graphical.svg" alt="Graphical" />
+                            <span>Graphical Issues</span>
+                        </div>
+                        <div class="issue-tab" onclick="showIssues('ui')">
+                            <img src="assets/issues/ui.svg" alt="UI" />
+                            <span>UI Issues</span>
+                        </div>
+                        <div class="issue-tab" onclick="showIssues('launcher-issues')">
+                            <img src="assets/issues/launcher.svg" alt="Launcher" />
+                            <span>Launcher Issues</span>
+                        </div>
+                        <div class="issue-tab" onclick="showIssues('networking')">
+                            <img src="assets/issues/networking.svg" alt="Networking" />
+                            <span>Networking Issues</span>
+                        </div>
+                    </div>
+
+                    <div id="update-content" class="issue-content active">
+                        <h3>Update Issues</h3>
+                        <ol>
+                            <li>Place the latest ElDewrito launcher (16 May 2024) in your ElDewrito folder.</li>
+                            <li>Run the launcher.</li>
+                            <li>Go to Settings > Updates to force check for an update if it doesn't check itself.</li>
+                            <img src="assets/issues/issues-1.png" alt="Issues-1" width="35%" height="35%"/>
+                        </ol>
+                        <p>If your launcher cannot find the latest ElDewrito version, torrenting is blocked on your network. You can bypass torrent restrictions by using a VPN service. Direct Message @duckfudge on Discord for additional support.</p>
+                    </div>
+
+                    <div id="performance-content" class="issue-content">
+                        <h3>Stuck On Main Menu And Low Framerates/Poor Performance</h3>
+                        <p>Unzip the contents of this DXVK implementation into your ElDewrito folder with eldorado.exe.</p>
+                        <p>Your game will stutter on the first run of any map and first load times will increase. You will have butter-smooth performance after restarting the game and loading the same map.</p>
+
+                        <div class="warning">
+                            <p><strong>WARNING:</strong> Vulkan 1.3 support is required. ElDewrito will crash if your PC does not support DXVK — delete the files if this is the case.</p>
+                        </div>
+                    </div>
+
+                    <div id="graphical-content" class="issue-content">
+                        <h3>Extreme Brightness</h3>
+                        <p>Enable CPU Exposure/Bloom Patch in Video Settings (Press HOME).</p>
+                        <img src="assets/issues/issues-4.png" alt="Issues-4" width="35%" height="35%"/>
+                    </div>
+
+                    <div id="ui-content" class="issue-content">
+                        <h3>Menus Are Not Working</h3>
+
+                        <!-- TODO: Add inline code blocks -->
+                        <p>Go to data\dewrito_prefs.cfg in your ElDewrito folder and change Game.CEFGpuEnable to 0 or add this line if it does not exist:</p>
+                        <code>Game.CEFGpuEnable 0</code>
+
+                        <!-- TODO: [this file](https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK) -->
+                        <p>Simple fix: Place this file in your ElDewrito folder with eldorado.exe.</p>
+                    </div>
+
+                    <div id="launcher-issues-content" class="issue-content">
+                        <h3>Launcher Fails To Start And TorrentLib Error</h3>
+                        <p>Your PC is missing a dependency.</p>
+                        <ul>
+                            <!-- TODO: Add URLs:
+                            [this](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer)
+                            [this](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+                            -->
+                            <li>General failure: Install this.</li>
+                            <li>Torrentlib error: Install this.</li>
+                        </ul>
+                    </div>
+
+                    <div id="networking-content" class="issue-content">
+                        <h3>Network Issues</h3>
+                        <!--TODO: [Cloudflare WARP](https://1111-releases.cloudflareclient.com/win/latest)-->
+                        <p>Your ISP may be blocking torrents. In this case, we suggest using a VPN like Cloudflare WARP or tethering your mobile data connection to your PC.</p>
+                        <p></p>
+
+                        <code>netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"</code>
+                        <code>netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"</code>
+
+                        <!-- TODO: Add inline code blocks -->
+                        <p>Replace C:\ElDewrito\ in the command with the path to your ElDewrito folder.</p>
+                        <p>Use the same command with the path to the launcher if it cannot access the Internet.</p>
+                        <img src="assets/issues/issues-2.png" alt="Issues-2" width="35%" height="35%"/>
                     </div>
                 </div>
             </div>
@@ -307,31 +351,54 @@
                 <div class="section">
                     <h2>Seeding</h2>
 
-                    <!-- TODO: Add a brief description of what seeding is and how it relates to ED -->
+                    <p>Seeding is the act of sharing pieces of a file that you've downloaded with other users in the network. This helps to maintain the availability of that file for other users. In essence, the more seeders there are for a file, the faster it can be downloaded by new users.</p>
+                    <p>In ElDewrito's case, Only the core game files (the files that were downloaded as part of the install) will be uploaded for other users as needed. NO personal info or user content, preferences, profiles, mods, map variants, game variants etc.. get uploaded.</p>
+                    <p>You have the option of seeding using the ElDewrito Launcher itself, or you can also seed through your favorite torrent client or through a dedicated seed-box.</p>
+                    
+                    <div class="warning">
+                        <p><strong>WARNING:</strong> If you have modified any of the core ElDewrito game files (the files that were downloaded as part of the install) you will not be able to seed through the launcher.</p>
+                    </div>
 
                     <!-- TODO: Add inline code blocks -->
 
-                    <h3>Launcher</h3>
-                    <ol>
-                        <li>Download the ElDewrito Launcher (Virustotal) and install the game.</li>
-                        <li>Go to Settings, then General then allow the launcher to start with Windows.</li>
-                        <img src="assets/seeding/seeding-2.png" alt="Seeding-2" width="35%" height="35%"/>
-                        <li>Go to Settings, then Updates then set an update check interval and enable automatic updates.</li>
-                        <img src="assets/seeding/seeding-3.png" alt="Seeding-3" width="35%" height="35%"/>
-                        <li>Go to Settings, then Seeding then click on the gear (⚙️) icon.</li>
-                        <img src="assets/seeding/seeding-4.png" alt="Seeding-4" width="35%" height="35%"/>
-                        <li>Enable automatic seeding.</li>
-                        <img src="assets/seeding/seeding-5.png" alt="Seeding-5" width="35%" height="35%"/>
-                        <li>Go back to Settings > Seeding then click ‘Start’.</li>
-                        <img src="assets/seeding/seeding-6.png" alt="Seeding-6" width="35%" height="35%"/>
-                    </ol>
-                    <h3>Torrent Clients and Seedboxes</h3>
-                    <ol>
-                        <li>Go to Settings, then Seeding then click ‘Torrent File’.</li>
-                        <img src="assets/seeding/seeding-7.png" alt="Seeding-7" width="35%" height="35%"/>
-                        <li>The launcher will open a folder with a torrent file for the current version. Upload this file to your torrent client or seedbox. Alternatively, paste the magnet link.</li>
-                        <img src="assets/seeding/seeding-8.png" alt="Seeding-8" width="35%" height="35%"/>
-                    </ol>
+                    <div class="seeding-tabs">
+                        <div class="seeding-tab active" onclick="showSeeding('launcher')">
+                            <img src="assets/seeding/launcher.svg" alt="Launcher" />
+                            <span>Launcher</span>
+                        </div>
+                        <div class="seeding-tab" onclick="showSeeding('torrent')">
+                            <img src="assets/seeding/torrent.svg" alt="Torrent" />
+                            <span>Torrent Clients and Seedboxes</span>
+                        </div>
+                    </div>
+
+                    <div id="launcher-content" class="seeding-content active">
+                        <h3>Seeding via Launcher</h3>
+                        <ol>
+                            <li>Download the ElDewrito Launcher (Virustotal) and install the game.</li>
+                            <li>Go to Settings, then General then allow the launcher to start with Windows.</li>
+                            <img src="assets/seeding/seeding-2.png" alt="Seeding-2" width="35%" height="35%"/>
+                            <li>Go to Settings, then Updates then set an update check interval and enable automatic updates.</li>
+                            <img src="assets/seeding/seeding-3.png" alt="Seeding-3" width="35%" height="35%"/>
+                            <li>Go to Settings, then Seeding then click on the gear (⚙️) icon.</li>
+                            <img src="assets/seeding/seeding-4.png" alt="Seeding-4" width="35%" height="35%"/>
+                            <li>Enable automatic seeding.</li>
+                            <img src="assets/seeding/seeding-5.png" alt="Seeding-5" width="35%" height="35%"/>
+                            <!--TODO: Add optional step for setting the rate limit-->
+                            <li>Go back to Settings > Seeding then click ‘Start’.</li>
+                            <img src="assets/seeding/seeding-6.png" alt="Seeding-6" width="35%" height="35%"/>
+                        </ol>
+                    </div>
+
+                    <div id="torrent-content" class="seeding-content">
+                        <h3>Seeding via Torrent Clients and Seedboxes</h3>
+                        <ol>
+                            <li>Go to Settings, then Seeding then click ‘Torrent File’.</li>
+                            <img src="assets/seeding/seeding-7.png" alt="Seeding-7" width="35%" height="35%"/>
+                            <li>The launcher will open a folder with a torrent file for the current version. Upload this file to your torrent client or seedbox. Alternatively, paste the magnet link.</li>
+                            <img src="assets/seeding/seeding-8.png" alt="Seeding-8" width="35%" height="35%"/>
+                        </ol>
+                    </div>
                 </div>
             </div>
 
