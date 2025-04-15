@@ -46,7 +46,7 @@ body
     height: auto;
     z-index: -1;
     object-fit: cover;
-    filter: blur(20px);
+    filter: blur(2vmin);
     transform: scale(1.1);
     animation: fadeIn 0.5s;
 }
@@ -253,7 +253,7 @@ code
 .platform-tab 
 {
     background: rgba(44, 65, 106, 0.949);
-    padding: 1vh 2vh;
+    padding: 1vh 1vh;
     margin-right: 1vh;
     cursor: pointer;
     border-radius: 0.25vh;
@@ -296,7 +296,7 @@ code
 .seeding-tab 
 {
     background: rgba(44, 65, 106, 0.949);
-    padding: 1vh 2vh;
+    padding: 1vh 1vh;
     margin-right: 1vh;
     cursor: pointer;
     border-radius: 0.25vh;
@@ -339,7 +339,7 @@ code
 .issue-tab 
 {
     background: rgba(44, 65, 106, 0.949);
-    padding: 1vh 2vh;
+    padding: 1vh 1vh;
     margin-right: 1vh;
     cursor: pointer;
     border-radius: 0.25vh;
@@ -483,6 +483,7 @@ th
     cursor: pointer;
     font-size: 2vh;
     text-transform: uppercase;
+    border-radius: 0.25vh;
 }
 
 .nav-button:hover 
@@ -508,6 +509,43 @@ th
 .page.active 
 {
     display: block;
+}
+
+.download 
+{
+    background: rgba(44, 65, 106, 0.949);
+    padding: 1vh 1vh;
+    cursor: pointer;
+    border-radius: 0.25vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.download img 
+{
+    margin-right: 0.8vh;
+    width: 3vh;
+    height: 3vh;
+}
+
+.download span 
+{
+    display: inline-block;
+    font-size: 2vh;
+}
+
+.download:hover 
+{
+    background-image: url(assets/buttonhover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.download.active 
+{
+    color: white;
+    outline: solid 0.2vh;
 }
 
 /*TODO: Screw around with animation styles*/
