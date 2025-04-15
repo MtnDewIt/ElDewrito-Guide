@@ -69,8 +69,6 @@
                 <div class="section">
                     <h2>Installing ElDewrito</h2>
 
-                    <!-- TODO: Fine tune spacing and padding of tab icons -->
-
                     <div class="platform-tabs">
                         <div class="platform-tab active" onclick="showPlatform('windows')">
                             <img src="assets/install/windows/windows-icon.svg" alt="Windows" />
@@ -99,11 +97,13 @@
                             <li>Download the ElDewrito Launcher | Virustotal</li>
                             <div class="download">
                                 <!-- TODO:
-                                [ElDewrito Launcher](http://eldewrito.org/download)
                                 [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
                                 -->
                                 <img src="assets/install/launcher.png" alt="Launcher" />
-                                <span>ElDewrito Launcher</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">ElDewrito Launcher</span>
+                                    <span class="download-url">http://eldewrito.org/download</span>
+                                </div>
                             </div>
                             <li>Run the Launcher (do not run as administrator).</li>
                             <li>Ignore Windows Smartscreen if prompted.</li>
@@ -144,28 +144,30 @@
                         <ol>
                             <li>Install GPTK (Game Porting Tool Kit)</li>
                             <div class="download">
-                                <!-- TODO:
-                                [Install GPTK (Game Porting Tool Kit)](https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit)
-                                -->
                                 <img src="assets/install/macos/gptk.png" alt="GPTK" />
-                                <span>Game Porting Tool Kit</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">Game Porting Tool Kit</span>
+                                    <span class="download-url">https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit</span>
+                                </div>
                             </div>
                             <li>Download the ElDewrito Launcher | Virustotal</li>
                             <div class="download">
                                 <!-- TODO:
-                                [ElDewrito Launcher](http://eldewrito.org/download)
                                 [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
                                 -->
                                 <img src="assets/install/launcher.png" alt="Launcher" />
-                                <span>ElDewrito Launcher</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">ElDewrito Launcher</span>
+                                    <span class="download-url">http://eldewrito.org/download</span>
+                                </div>
                             </div>
-                            <li>Download .NET 6.0.2 Installer</li>
+                            <li>Download .NET 6.0.424 Installer</li>
                             <div class="download">
-                                <!-- TODO:
-                                [Download .NET 6.0.2 Installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer)
-                                -->
                                 <img src="assets/install/macos/dotnet.png" alt=".NET" />
-                                <span>.NET 6.0.2 Installer</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">.NET 6.0.424 Installer</span>
+                                    <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer</span>
+                                </div>
                             </div>
                             <li>Extract all files to the GTPK directory (default name is my-game-prefix)
                                 <code>\Users~\my-game-prefix\Program_Files</code>
@@ -198,19 +200,21 @@
                             <li>Download the ElDewrito Launcher | Virustotal</li>
                             <div class="download">
                                 <!-- TODO:
-                                [ElDewrito Launcher](http://eldewrito.org/download)
                                 [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
                                 -->
                                 <img src="assets/install/launcher.png" alt="Launcher" />
-                                <span>ElDewrito Launcher</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">ElDewrito Launcher</span>
+                                    <span class="download-url">http://eldewrito.org/download</span>
+                                </div>
                             </div>
                             <li>Install and Open Lutris.</li>
                             <div class="download">
-                                <!-- TODO:
-                                [Lutris](https://lutris.net/downloads)
-                                -->
                                 <img src="assets/install/linux/lutris.png" alt="Lutris" />
-                                <span>Lutris</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">Lutris</span>
+                                    <span class="download-url">https://lutris.net/downloads</span>
+                                </div>
                             </div>
                             <li>Click the Plus Sign in the Top Left.</li>
                             <li>Select Install a Windows game from an executable.</li>
@@ -244,11 +248,13 @@
                             <li>Download the ElDewrito Launcher | Virustotal</li>
                             <div class="download">
                                 <!-- TODO:
-                                [ElDewrito Launcher](http://eldewrito.org/download)
                                 [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
                                 -->
-                                <img src="assets/install/launcher.png" alt="Installer" />
-                                <span>ElDewrito Launcher</span>
+                                <img src="assets/install/launcher.png" alt="Launcher" />
+                                <div class="download-textbox">
+                                    <span class="download-title">ElDewrito Launcher</span>
+                                    <span class="download-url">http://eldewrito.org/download</span>
+                                </div>
                             </div>
                             <li>Open Steam settings.</li>
                             <li>Navigate to the Compatibility header.</li>
@@ -323,7 +329,10 @@
                         <p>Unzip the contents of this DXVK implementation into your ElDewrito folder with eldorado.exe.</p>
                         <div class="download">
                             <img src="assets/issues/dxvk.png" alt="DXVK" />
-                            <span>ElDewrito DXVK</span>
+                            <div class="download-textbox">
+                                <span class="download-title">ElDewrito DXVK</span>
+                                <span class="download-url">https://github.com/duckfudge/eldewrito-dxvk/releases/latest</span>
+                            </div>
                         </div>
                         <p>Your game will stutter on the first run of any map and first load times will increase. You will have butter-smooth performance after restarting the game and loading the same map.</p>
 
@@ -348,11 +357,11 @@
                         <p>Simple fix: Place this file in your ElDewrito folder with eldorado.exe.</p>
 
                         <div class="download">
-                            <!-- TODO: 
-                            [this file](https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK) 
-                            -->
                             <img src="assets/issues/file.svg" alt="Autoexec" />
-                            <span>autoexec.cfg</span>
+                            <div class="download-textbox">
+                                <span class="download-title">autoexec.cfg</span>
+                                <span class="download-url">https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK</span>
+                            </div>
                         </div>
                     </div>
 
@@ -362,19 +371,19 @@
                         <ul>
                             <li>General failure: Install this.</li>
                             <div class="download">
-                                <!-- TODO:
-                                [this](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer)
-                                -->
                                 <img src="assets/issues/dotnet.png" alt=".NET" />
-                                <span>.NET 6.0.2 Installer</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">.NET 6.0.29</span>
+                                    <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer</span>
+                                </div>
                             </div>
                             <li>Torrentlib error: Install this.</li>
                             <div class="download">
-                                <!-- TODO:
-                                [this](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-                                -->
                                 <img src="assets/issues/vcredis.png" alt="C++" />
-                                <span>Visual C++ Redistributable</span>
+                                <div class="download-textbox">
+                                    <span class="download-title">Visual C++ Redistributable</span>
+                                    <span class="download-url">https://aka.ms/vs/17/release/vc_redist.x64.exe</span>
+                                </div>
                             </div>
                         </ul>
                     </div>
@@ -426,19 +435,6 @@
                     <div id="launcher-content" class="seeding-content active">
                         <h3>Seeding via Launcher</h3>
                         <ol>
-                            <!--TODO: 
-                            Remove the first step, it ain't necessary
-                            -->
-
-                            <li>Download the ElDewrito Launcher (Virustotal) and install the game.</li>
-                            <div class="download">
-                                <!-- TODO:
-                                [ElDewrito Launcher](http://eldewrito.org/download)
-                                [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
-                                -->
-                                <img src="assets/seeding/launcher.png" alt="Launcher" />
-                                <span>ElDewrito Launcher</span>
-                            </div>
                             <li>Go to Settings, then General then allow the launcher to start with Windows.</li>
                             <img src="assets/seeding/seeding-2.png" alt="Seeding-2" width="35%" height="35%"/>
                             <li>Go to Settings, then Updates then set an update check interval and enable automatic updates.</li>
@@ -447,7 +443,8 @@
                             <img src="assets/seeding/seeding-4.png" alt="Seeding-4" width="35%" height="35%"/>
                             <li>Enable automatic seeding.</li>
                             <img src="assets/seeding/seeding-5.png" alt="Seeding-5" width="35%" height="35%"/>
-                            <!--TODO: Add optional step for setting the rate limit-->
+                            <li>Optional: Set your preferred upload rate limit.</li>
+                            <!--<img src="assets/seeding/seeding-*.png" alt="Seeding-*" width="35%" height="35%"/>-->
                             <li>Go back to Settings > Seeding then click ‘Start’.</li>
                             <img src="assets/seeding/seeding-6.png" alt="Seeding-6" width="35%" height="35%"/>
                         </ol>

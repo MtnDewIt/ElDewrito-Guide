@@ -520,6 +520,17 @@ th
     display: flex;
     align-items: center;
     margin-bottom: 1vh;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.download-textbox
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 3.8vh;
+    transition: margin-left 0.3s ease;
 }
 
 .download img 
@@ -527,12 +538,28 @@ th
     margin-right: 0.8vh;
     width: 3vh;
     height: 3vh;
+    border-radius: 0.5vh;
+    position: absolute;
+    left: 1vh;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
-.download span 
+.download-title
 {
     display: inline-block;
     font-size: 2vh;
+    line-height: 2.5vh;
+}
+
+.download-url
+{
+    font-size: 2vh;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
 .download:hover 
@@ -540,6 +567,24 @@ th
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.download:hover .download-url
+{
+    max-height: 2.5vh;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.download:hover img 
+{
+    width: 5vh;
+    height: 5vh;
+}
+
+.download:hover .download-textbox 
+{
+    margin-left: 5.8vh;
 }
 
 .download.active 
