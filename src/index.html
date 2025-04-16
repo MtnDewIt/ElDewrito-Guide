@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="guide.css">
 </head>
 <body>
-    <!--TODO: Add toggle for background video: accesibility reasons :/-->
+    <!--TODO: Add toggle for background video: accessibility reasons :/-->
     <video loop muted autoplay playsinline id="background-video">
         <source src="assets/videos/background.mp4" type="video/mp4">
     </video>
@@ -91,40 +91,36 @@
                     <div id="windows-content" class="platform-content active">
                         <h3>Windows Installation</h3>
 
-                        <!-- TODO: Add inline code comments-->
-
                         <ol>
                             <li>Download the ElDewrito Launcher | Virustotal</li>
-                            <div class="download">
-                                <!-- TODO:
-                                [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
-                                -->
-                                <img src="assets/install/launcher.png" alt="Launcher" />
-                                <div class="download-textbox">
-                                    <span class="download-title">ElDewrito Launcher</span>
-                                    <span class="download-url">http://eldewrito.org/download</span>
+                            <a class="download-anchor" href="http://eldewrito.org/download">
+                                <div class="download">
+                                    <!-- TODO:
+                                    [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                                    -->
+                                    <img src="assets/install/launcher.png" alt="Launcher" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">ElDewrito Launcher</span>
+                                        <span class="download-url">http://eldewrito.org/download</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Run the Launcher (do not run as administrator).</li>
                             <li>Ignore Windows Smartscreen if prompted.</li>
                             <img src="assets/install/windows/windows-3.png" alt="Windows-3" width="35%" height="35%"/>
-                            <li>Click Next.</li>
+                            <li>Click <code class="inline-code">Next</code>.</li>
                             <img src="assets/install/windows/windows-4.png" alt="Windows-4" width="35%" height="35%"/>
                             <li>Wait for the Launcher to find the latest version.</li>
                             <img src="assets/install/windows/windows-5.png" alt="Windows-5" width="35%" height="35%"/>
-                            <li>Select your install location then click Install. We recommend your desktop folder.</li>
+                            <li>Select your install location then click <code class="inline-code">Install</code>. We recommend your desktop folder.</li>
                             <img src="assets/install/windows/windows-6.png" alt="Windows-6" width="35%" height="35%"/>
                             <li>Wait for the launcher to download and install ElDewrito.</li>
                             <img src="assets/install/windows/windows-7.png" alt="Windows-7" width="35%" height="35%"/>
-                            <li>Click Play on the welcome screen after installation is complete.</li>
+                            <li>Click <code class="inline-code">Play</code> on the welcome screen after installation is complete.</li>
                             <img src="assets/install/windows/windows-8.png" alt="Windows-8" width="35%" height="35%"/>
                             <li>Enjoy!</li>
                         </ol>
 
-                        <!-- TODO:
-                        [Seeding Guide](http://eldewrito.org/seed)
-                        -->
-                        <p>Remember to seed to support the game’s distribution network. Seeding Guide.</p>
                         <!-- TODO:
                         [HaloBase](https://discord.gg/PxPNNteChR)
                         [#welcome](https://discord.com/channels/415700035398008843/449689096902672384)
@@ -139,47 +135,51 @@
                     <div id="mac-content" class="platform-content">
                         <h3>Mac OS Installation</h3>
 
-                        <!-- TODO: Add inline code comments-->
-
                         <ol>
                             <li>Install GPTK (Game Porting Tool Kit)</li>
-                            <div class="download">
-                                <img src="assets/install/macos/gptk.png" alt="GPTK" />
-                                <div class="download-textbox">
-                                    <span class="download-title">Game Porting Tool Kit</span>
-                                    <span class="download-url">https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit</span>
+                            <a class="download-anchor" href="https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit">
+                                <div class="download">
+                                    <img src="assets/install/macos/gptk.png" alt="GPTK" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">Game Porting Tool Kit</span>
+                                        <span class="download-url">https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Download the ElDewrito Launcher | Virustotal</li>
-                            <div class="download">
-                                <!-- TODO:
-                                [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
-                                -->
-                                <img src="assets/install/launcher.png" alt="Launcher" />
-                                <div class="download-textbox">
-                                    <span class="download-title">ElDewrito Launcher</span>
-                                    <span class="download-url">http://eldewrito.org/download</span>
+                            <a class="download-anchor" href="http://eldewrito.org/download">
+                                <div class="download">
+                                    <!-- TODO:
+                                    [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                                    -->
+                                    <img src="assets/install/launcher.png" alt="Launcher" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">ElDewrito Launcher</span>
+                                        <span class="download-url">http://eldewrito.org/download</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Download .NET 6.0.424 Installer</li>
-                            <div class="download">
-                                <img src="assets/install/macos/dotnet.png" alt=".NET" />
-                                <div class="download-textbox">
-                                    <span class="download-title">.NET 6.0.424 Installer</span>
-                                    <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer</span>
+                            <a class="download-anchor" href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer">
+                                <div class="download">
+                                    <img src="assets/install/macos/dotnet.png" alt=".NET" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">.NET 6.0.424 Installer</span>
+                                        <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-installer</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <li>Extract all files to the GTPK directory (default name is my-game-prefix)
+                            </a>
+                            <li>Extract all files to the GTPK directory (default name is <code class="inline-code">my-game-prefix</code>).
                                 <code>\Users~\my-game-prefix\Program_Files</code>
                             </li>
                             <li>Run the .NET installer through the GPTK terminal.
                                 <code>gameportingtoolkit~/my-game-prefix 'C:\Program_Files\windowsdesktop-runtime-6.0.32-win-x64.exe'</code>
                             </li>
-                            <li>Run the ElDewrito Launcher — install to Program_Files directory
+                            <li>Run the ElDewrito Launcher — install to <code class="inline-code">Program_Files</code> directory
                                 <code>gameportingtoolkit ~/my-game-prefix 'C:\Program_files\launcher.exe</code>
                             </li>
-                            <li>Go into the ElDewrito folder, open data/dewrito_prefs.cfg and set Game.CEFGpuEnable to 0. Create dewrito_prefs.cfg if it does not exist</li>
-                            <li>Run Halo Online with the no-esync prefix
+                            <li>Go into the ElDewrito folder, open <code class="inline-code">data/dewrito_prefs.cfg</code> and set <code class="inline-code">Game.CEFGpuEnable</code> to <code class="inline-code">0</code>. Create <code class="inline-code">dewrito_prefs.cfg</code> if it does not exist</li>
+                            <li>Run Halo Online with the <code class="inline-code">no-esync</code> prefix
                                 <code>gameportingtoolkit-no-esync ~/my-game-prefix 'C:\Program Files\ElDewrito\eldorado.exe'</code>
                             </li>
                         </ol>
@@ -194,45 +194,47 @@
                     <div id="linux-content" class="platform-content">
                         <h3>Linux Installation</h3>
 
-                        <!-- TODO: Add inline code comments-->
-
                         <ol>
                             <li>Download the ElDewrito Launcher | Virustotal</li>
-                            <div class="download">
-                                <!-- TODO:
-                                [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
-                                -->
-                                <img src="assets/install/launcher.png" alt="Launcher" />
-                                <div class="download-textbox">
-                                    <span class="download-title">ElDewrito Launcher</span>
-                                    <span class="download-url">http://eldewrito.org/download</span>
+                            <a class="download-anchor" href="http://eldewrito.org/download">
+                                <div class="download">
+                                    <!-- TODO:
+                                    [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                                    -->
+                                    <img src="assets/install/launcher.png" alt="Launcher" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">ElDewrito Launcher</span>
+                                        <span class="download-url">http://eldewrito.org/download</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Install and Open Lutris.</li>
-                            <div class="download">
-                                <img src="assets/install/linux/lutris.png" alt="Lutris" />
-                                <div class="download-textbox">
-                                    <span class="download-title">Lutris</span>
-                                    <span class="download-url">https://lutris.net/downloads</span>
+                            <a class="download-anchor" href="https://lutris.net/downloads">
+                                <div class="download">
+                                    <img src="assets/install/linux/lutris.png" alt="Lutris" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">Lutris</span>
+                                        <span class="download-url">https://lutris.net/downloads</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Click the Plus Sign in the Top Left.</li>
-                            <li>Select Install a Windows game from an executable.</li>
+                            <li>Select <code class="inline-code">Install a Windows Game from an Executable</code>.</li>
                             <li>Enter a name for the install (ElDewrito or Halo Online would both be optimal).</li>
-                            <li>Select Install.</li>
-                            <li>Click Setup File then Install.</li>
+                            <li>Select <code class="inline-code">Install</code>.</li>
+                            <li>Click <code class="inline-code">Setup File</code> > <code class="inline-code">Install</code>.</li>
                             <li>Select the folder where you wish to install ElDewrito.</li>
-                            <li>Find the location where you saved your launcher.exe and Select it, then click Install.</li>
+                            <li>Find the location where you saved your launcher.exe and select it, then click <code class="inline-code">Install</code>.</li>
                             <li>Lutris will now start the installation process</li>
                             <li>Install as usual, just keep the default location because it's all going to be installed to the location that you selected earlier</li>
                             <li>Start and Close the Game</li>
                             <li>Close the Launcher and go back into Lutris</li>
-                            <li>Right Click Configure, then Game Options</li>
+                            <li>Right Click <code class="inline-code">Configure</code> > <code class="inline-code">Game Options</code></li>
                             <li>For the Executable option, Select the launcher.exe that Lutris installed. It should be in the path:
                                 <code>(installation folder)\drive_c\users\(user_name)\Desktop\ElDewrito\launcher.exe</code>
                             </li>
-                            <li>Click Save and close back to Lutris</li>
-                            <li>To add the game to steam, Right Click Create steam shortcut. Once you go back to Game Mode or restart Steam, the game should be there.</li>
+                            <li>Click <code class="inline-code">Save</code> and close back to Lutris</li>
+                            <li>To add the game to steam, Right Click <code class="inline-code">Create Steam Shortcut</code>. Once you go back to Game Mode or restart Steam, the game should be there.</li>
                             <li>Run ElDewrito through Steam and enjoy!</li>
                         </ol>
 
@@ -242,25 +244,25 @@
                     <div id="steam-deck-content" class="platform-content">
                         <h3>Steam Deck Installation</h3>
 
-                        <!-- TODO: Add inline code comments-->
-
                         <ol>
                             <li>Download the ElDewrito Launcher | Virustotal</li>
-                            <div class="download">
-                                <!-- TODO:
-                                [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
-                                -->
-                                <img src="assets/install/launcher.png" alt="Launcher" />
-                                <div class="download-textbox">
-                                    <span class="download-title">ElDewrito Launcher</span>
-                                    <span class="download-url">http://eldewrito.org/download</span>
+                            <a class="download-anchor" href="http://eldewrito.org/download">
+                                <div class="download">
+                                    <!-- TODO:
+                                    [(Virustotal)](https://www.virustotal.com/gui/file/7ce2de9987684a505de05a4ea5b21b80b0d1514ff1b66af72353a1de773eb61a)
+                                    -->
+                                    <img src="assets/install/launcher.png" alt="Launcher" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">ElDewrito Launcher</span>
+                                        <span class="download-url">http://eldewrito.org/download</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Open Steam settings.</li>
                             <li>Navigate to the Compatibility header.</li>
-                            <li>Check Enable Steam Play for all other titles.</li>
-                            <li>Select Proton 8.0-5 from the drop-down menu.</li>
-                            <li>Click Ok then restart Steam.</li>
+                            <li>Check <code class="inline-code">Enable Steam Play for all other titles</code>.</li>
+                            <li>Select <code class="inline-code">Proton 8.0-5</code> from the drop-down menu.</li>
+                            <li>Click <code class="inline-code">Ok</code> then restart Steam.</li>
                             <li>Add ElDewrito to your Steam library.</li>
                             <li>Add the following as a launch option/argument for the ElDewrito Launcher’s properties in Steam:
                                 <code>DOTNET_BUNDLE_EXTRACT_BASE_DIR=.cache %command%</code>
@@ -283,7 +285,7 @@
                     <!-- If none of these solutions work, or you encounter an issue not listed here, blah blah, slap it on discord :/ -->
 
                     <div class="note">
-                        <p><strong>IMPORTANT:</strong> If none of these solutions work, or you encounter an issue not listed here, ....</p>
+                        <p><strong>IMPORTANT:</strong> If none of these solutions work, or you encounter an issue not listed here, blah blah, slap it on discord :/</p>
                     </div>
 
                     <div class="issue-tabs">
@@ -316,9 +318,9 @@
                     <div id="update-content" class="issue-content active">
                         <h3>Update Issues</h3>
                         <ol>
-                            <li>Place the latest ElDewrito launcher (16 May 2024) in your ElDewrito folder.</li>
+                            <li>Place the latest ElDewrito Launcher (v0.1.1) in your ElDewrito folder.</li>
                             <li>Run the launcher.</li>
-                            <li>Go to Settings > Updates to force check for an update if it doesn't check itself.</li>
+                            <li>Go to <code class="inline-code">Settings</code> > <code class="inline-code">Updates</code> to force check for an update if it doesn't check itself.</li>
                             <img src="assets/issues/issues-1.png" alt="Issues-1" width="35%" height="35%"/>
                         </ol>
                         <p>If your launcher cannot find the latest ElDewrito version, torrenting is blocked on your network. You can bypass torrent restrictions by using a VPN service. Direct Message @duckfudge on Discord for additional support.</p>
@@ -327,13 +329,15 @@
                     <div id="performance-content" class="issue-content">
                         <h3>Stuck On Main Menu And Low Framerates/Poor Performance</h3>
                         <p>Unzip the contents of this DXVK implementation into your ElDewrito folder with eldorado.exe.</p>
-                        <div class="download">
-                            <img src="assets/issues/dxvk.png" alt="DXVK" />
-                            <div class="download-textbox">
-                                <span class="download-title">ElDewrito DXVK</span>
-                                <span class="download-url">https://github.com/duckfudge/eldewrito-dxvk/releases/latest</span>
+                        <a class="download-anchor" href="https://github.com/duckfudge/eldewrito-dxvk/releases/latest">
+                            <div class="download">
+                                <img src="assets/issues/dxvk.png" alt="DXVK" />
+                                <div class="download-textbox">
+                                    <span class="download-title">ElDewrito DXVK</span>
+                                    <span class="download-url">https://github.com/duckfudge/eldewrito-dxvk/releases/latest</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <p>Your game will stutter on the first run of any map and first load times will increase. You will have butter-smooth performance after restarting the game and loading the same map.</p>
 
                         <div class="warning">
@@ -350,19 +354,21 @@
                     <div id="ui-content" class="issue-content">
                         <h3>Menus Are Not Working</h3>
 
-                        <!-- TODO: Add inline code blocks -->
-                        <p>Go to data\dewrito_prefs.cfg in your ElDewrito folder and change Game.CEFGpuEnable to 0 or add this line if it does not exist:</p>
+                        <p>Go to <code class="inline-code">data\dewrito_prefs.cfg</code> in your ElDewrito folder and change <code class="inline-code">Game.CEFGpuEnable</code> to <code class="inline-code">0</code> or add this line if it does not exist:</p>
+                        
                         <code>Game.CEFGpuEnable 0</code>
 
                         <p>Simple fix: Place this file in your ElDewrito folder with eldorado.exe.</p>
 
-                        <div class="download">
-                            <img src="assets/issues/file.svg" alt="Autoexec" />
-                            <div class="download-textbox">
-                                <span class="download-title">autoexec.cfg</span>
-                                <span class="download-url">https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK</span>
+                        <a class="download-anchor" href="https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK">
+                            <div class="download">
+                                <img src="assets/issues/file.svg" alt="Autoexec" />
+                                <div class="download-textbox">
+                                    <span class="download-title">autoexec.cfg</span>
+                                    <span class="download-url">https://drive.google.com/file/d/1z86tuc_W98ai9L9fbcPwoysulENbzUwK</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div id="launcher-issues-content" class="issue-content">
@@ -370,21 +376,25 @@
                         <p>Your PC is missing a dependency.</p>
                         <ul>
                             <li>General failure: Install this.</li>
-                            <div class="download">
-                                <img src="assets/issues/dotnet.png" alt=".NET" />
-                                <div class="download-textbox">
-                                    <span class="download-title">.NET 6.0.29</span>
-                                    <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer</span>
+                            <a class="download-anchor" href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer">
+                                <div class="download">
+                                    <img src="assets/issues/dotnet.png" alt=".NET" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">.NET 6.0.29</span>
+                                        <span class="download-url">https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.29-windows-x64-installer</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <li>Torrentlib error: Install this.</li>
-                            <div class="download">
-                                <img src="assets/issues/vcredis.png" alt="C++" />
-                                <div class="download-textbox">
-                                    <span class="download-title">Visual C++ Redistributable</span>
-                                    <span class="download-url">https://aka.ms/vs/17/release/vc_redist.x64.exe</span>
+                            <a class="download-anchor" href="https://aka.ms/vs/17/release/vc_redist.x64.exe">
+                                <div class="download">
+                                    <img src="assets/issues/vcredis.png" alt="C++" />
+                                    <div class="download-textbox">
+                                        <span class="download-title">Visual C++ Redistributable</span>
+                                        <span class="download-url">https://aka.ms/vs/17/release/vc_redist.x64.exe</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </ul>
                     </div>
 
@@ -399,8 +409,7 @@
                         <code>netsh advfirewall firewall add rule name="eldewrito-in" dir=in action=allow program="C:\ElDewrito\eldorado.exe"</code>
                         <code>netsh advfirewall firewall add rule name="eldewrito-out" dir=out action=allow program="C:\ElDewrito\eldorado.exe"</code>
 
-                        <!-- TODO: Add inline code blocks -->
-                        <p>Replace C:\ElDewrito\ in the command with the path to your ElDewrito folder.</p>
+                        <p>Replace <code class="inline-code">C:\ElDewrito\</code> in the command with the path to your ElDewrito folder.</p>
                         <p>Use the same command with the path to the launcher if it cannot access the Internet.</p>
                         <img src="assets/issues/issues-2.png" alt="Issues-2" width="35%" height="35%"/>
                     </div>
@@ -419,8 +428,6 @@
                         <p><strong>WARNING:</strong> If you have modified any of the core ElDewrito game files (the files that were downloaded as part of the install) you will not be able to seed through the launcher.</p>
                     </div>
 
-                    <!-- TODO: Add inline code blocks -->
-
                     <div class="seeding-tabs">
                         <div class="seeding-tab active" onclick="showSeeding('launcher')">
                             <img src="assets/seeding/launcher.svg" alt="Launcher" />
@@ -435,17 +442,17 @@
                     <div id="launcher-content" class="seeding-content active">
                         <h3>Seeding via Launcher</h3>
                         <ol>
-                            <li>Go to Settings, then General then allow the launcher to start with Windows.</li>
+                            <li>Go to Settings > General then allow the launcher to start with Windows.</li>
                             <img src="assets/seeding/seeding-2.png" alt="Seeding-2" width="35%" height="35%"/>
-                            <li>Go to Settings, then Updates then set an update check interval and enable automatic updates.</li>
+                            <li>Go to Settings > Updates then set an update check interval and enable automatic updates.</li>
                             <img src="assets/seeding/seeding-3.png" alt="Seeding-3" width="35%" height="35%"/>
-                            <li>Go to Settings, then Seeding then click on the gear (⚙️) icon.</li>
+                            <li>Go to Settings > Seeding then click on the gear <code class="inline-code">⚙️</code> icon.</li>
                             <img src="assets/seeding/seeding-4.png" alt="Seeding-4" width="35%" height="35%"/>
                             <li>Enable automatic seeding.</li>
                             <img src="assets/seeding/seeding-5.png" alt="Seeding-5" width="35%" height="35%"/>
                             <li>Optional: Set your preferred upload rate limit.</li>
                             <!--<img src="assets/seeding/seeding-*.png" alt="Seeding-*" width="35%" height="35%"/>-->
-                            <li>Go back to Settings > Seeding then click ‘Start’.</li>
+                            <li>Go back to Settings > Seeding then click <code class="inline-code">Start</code>.</li>
                             <img src="assets/seeding/seeding-6.png" alt="Seeding-6" width="35%" height="35%"/>
                         </ol>
                     </div>
@@ -453,7 +460,7 @@
                     <div id="torrent-content" class="seeding-content">
                         <h3>Seeding via Torrent Clients and Seedboxes</h3>
                         <ol>
-                            <li>Go to Settings, then Seeding then click ‘Torrent File’.</li>
+                            <li>Go to Settings > Seeding then click <code class="inline-code">Torrent File</code>.</li>
                             <img src="assets/seeding/seeding-7.png" alt="Seeding-7" width="35%" height="35%"/>
                             <li>The launcher will open a folder with a torrent file for the current version. Upload this file to your torrent client or seedbox. Alternatively, paste the magnet link.</li>
                             <img src="assets/seeding/seeding-8.png" alt="Seeding-8" width="35%" height="35%"/>

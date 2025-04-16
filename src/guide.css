@@ -210,8 +210,18 @@ code
     background: rgba(44, 65, 106, 0.949);
     padding: 1vh;
     margin: 1vh 0;
-    border-radius: 0.3vh;
+    border-radius: 0.25vh;
     color: #d9e0e9;
+}
+
+.inline-code
+{
+    display: inline;
+    background: rgba(44, 65, 106, 0.949);
+    padding: 0.25vh 0.5vh;
+    margin: 1vh 0;
+    border-radius: 0.25vh;
+    color: #98b3d3;
 }
 
 .note 
@@ -593,10 +603,22 @@ th
     margin-left: 5.8vh;
 }
 
+.download:active 
+{
+    transform: scale(0.95);
+    background-color: rgba(35, 55, 100, 0.949);
+}
+
 .download.active 
 {
     color: white;
     outline: solid 0.2vh;
+}
+
+.download-anchor:link, .download-anchor:visited
+{
+    text-decoration: none;
+    color: #98b3d3;
 }
 
 /*TODO: Screw around with animation styles*/
@@ -618,7 +640,7 @@ th
 .video-item {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
     background: rgba(44, 65, 106, 0.949);
     border-radius: 0.5vh;
     overflow: hidden;
