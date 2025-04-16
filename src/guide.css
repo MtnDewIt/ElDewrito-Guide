@@ -517,11 +517,12 @@ th
     padding: 1vh 1vh;
     cursor: pointer;
     border-radius: 0.25vh;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-bottom: 1vh;
     transition: all 0.3s ease;
     position: relative;
+    width: max-content;
 }
 
 .download-textbox
@@ -551,6 +552,7 @@ th
     display: inline-block;
     font-size: 2vh;
     line-height: 2.5vh;
+    white-space: nowrap;
 }
 
 .download-url
@@ -560,6 +562,9 @@ th
     opacity: 0;
     transform: translateY(-50%);
     transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
 }
 
 .download:hover 
@@ -574,6 +579,7 @@ th
     max-height: 2.5vh;
     opacity: 1;
     transform: translateY(0);
+    width: auto;
 }
 
 .download:hover img 
