@@ -206,6 +206,8 @@ li
 
 code 
 {
+    font-size: 2vh;
+    line-height: 2.8vh;
     display: block;
     background: rgba(44, 65, 106, 0.949);
     padding: 1vh;
@@ -274,12 +276,13 @@ code
 .platform-tab img 
 {
     margin-right: 0.8vh;
-    width: 2vh;
-    height: 2vh;
+    width: 3vh;
+    height: 3vh;
 }
 
 .platform-tab span 
 {
+    font-size: 2vh;
     display: inline-block;
 }
 
@@ -291,49 +294,6 @@ code
 }
 
 .platform-tab.active 
-{
-    color: white;
-    outline: solid 0.2vh;
-}
-
-.seeding-tabs 
-{
-    display: flex;
-    margin-bottom: 1vh;
-    padding-top: 1.5vh;
-}
-
-.seeding-tab 
-{
-    background: rgba(44, 65, 106, 0.949);
-    padding: 1vh 1vh;
-    margin-right: 1vh;
-    cursor: pointer;
-    border-radius: 0.25vh;
-    display: flex;
-    align-items: center;
-}
-
-.seeding-tab img 
-{
-    margin-right: 0.8vh;
-    width: 2vh;
-    height: 2vh;
-}
-
-.seeding-tab span 
-{
-    display: inline-block;
-}
-
-.seeding-tab:hover 
-{
-    background-image: url(assets/buttonhover.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.seeding-tab.active 
 {
     color: white;
     outline: solid 0.2vh;
@@ -360,12 +320,13 @@ code
 .issue-tab img 
 {
     margin-right: 0.8vh;
-    width: 2vh;
-    height: 2vh;
+    width: 3vh;
+    height: 3vh;
 }
 
 .issue-tab span 
 {
+    font-size: 2vh;
     display: inline-block;
 }
 
@@ -377,6 +338,50 @@ code
 }
 
 .issue-tab.active 
+{
+    color: white;
+    outline: solid 0.2vh;
+}
+
+.seeding-tabs 
+{
+    display: flex;
+    margin-bottom: 1vh;
+    padding-top: 1.5vh;
+}
+
+.seeding-tab 
+{
+    background: rgba(44, 65, 106, 0.949);
+    padding: 1vh 1vh;
+    margin-right: 1vh;
+    cursor: pointer;
+    border-radius: 0.25vh;
+    display: flex;
+    align-items: center;
+}
+
+.seeding-tab img 
+{
+    margin-right: 0.8vh;
+    width: 3vh;
+    height: 3vh;
+}
+
+.seeding-tab span 
+{
+    font-size: 2vh;
+    display: inline-block;
+}
+
+.seeding-tab:hover 
+{
+    background-image: url(assets/buttonhover.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seeding-tab.active 
 {
     color: white;
     outline: solid 0.2vh;

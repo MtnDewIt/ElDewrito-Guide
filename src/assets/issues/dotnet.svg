@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="512"
+   height="512"
+   id="svg5"
+   sodipodi:docname="dotnet.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.87207031"
+     inkscape:cx="-3.4400896"
+     inkscape:cy="245.96641"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1913"
+     inkscape:window-y="1203"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <path
+     d="M0 0 C168.96 0 337.92 0 512 0 C512 168.96 512 337.92 512 512 C343.04 512 174.08 512 0 512 C0 343.04 0 174.08 0 0 Z "
+     fill="#512BD4"
+     transform="translate(0,0)"
+     id="path1" />
+  <path
+     d="M 0,0 H 25 C 89.059121,101.09156 24.9987,0.07861228 89,101 V 0 h 21 v 133 c -21.660714,0.0547 -1.42444,-0.14337 -21.674184,0.0839 C 19.548462,28.808725 88.310821,133.07495 21,29 V 133 H 0 Z"
+     fill="#fcfcfe"
+     transform="translate(126,192)"
+     id="path2"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     d="M0 0 C23.1 0 46.2 0 70 0 C70 6.27 70 12.54 70 19 C54.16 19 38.32 19 22 19 C22 31.54 22 44.08 22 57 C36.85 57 51.7 57 67 57 C67 63.27 67 69.54 67 76 C52.15 76 37.3 76 22 76 C22 88.87 22 101.74 22 115 C38.83 115 55.66 115 73 115 C73 121.27 73 127.54 73 134 C48.91 134 24.82 134 0 134 C0 89.78 0 45.56 0 0 Z "
+     fill="#FAF9FD"
+     transform="translate(264,191)"
+     id="path3" />
+  <path
+     d="M0 0 C31.68 0 63.36 0 96 0 C96 5.94 96 11.88 96 18 C83.79 18.33 71.58 18.66 59 19 C58.67 56.62 58.34 94.24 58 133 C51.07 133 44.14 133 37 133 C37 95.05 37 57.1 37 18 C24.79 18 12.58 18 0 18 C0 12.06 0 6.12 0 0 Z "
+     fill="#FEFEFE"
+     transform="translate(345,192)"
+     id="path4" />
+  <ellipse
+     style="fill:#ffffff"
+     id="path7"
+     cx="90.882423"
+     cy="312.62485"
+     rx="13.330347"
+     ry="12.756999" />
+</svg>
