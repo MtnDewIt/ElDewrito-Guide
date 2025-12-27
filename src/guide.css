@@ -291,6 +291,7 @@ code
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .platform-tab.active 
@@ -335,6 +336,7 @@ code
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .issue-tab.active 
@@ -379,6 +381,7 @@ code
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .seeding-tab.active 
@@ -506,6 +509,7 @@ th
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: white;
 }
 
@@ -587,6 +591,7 @@ th
     background-image: url(assets/buttonhover.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .download:hover .download-url
